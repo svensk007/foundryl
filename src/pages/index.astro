@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Foundryl">
+  <main
+    class="grid items-center content-center h-screen grid-flow-row gap-4 justify-center"
+  >
+    <h1 class="tracking-tight">Foundryl</h1>
+    <div class="grid grid-flow-col gap-2 w-full">
+      <input
+        type="text"
+        class="w-auto h-6 p-10 border shadow-md bg-neutral-600 rounded-2xl border-neutral-400 focus:border-neutral-300 focus:outline-none"
+        placeholder="Search..."
+      />
+      <button
+        class="w-auto h-6 py-10 shadow-md outline-none focus:outline-2 focus:outline-amber-600 focus:outline-offset-2 duration-100 bg-amber-600 rounded-2xl"
+        >Go</button
+      >
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    color: white;
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+  }
+</style>
